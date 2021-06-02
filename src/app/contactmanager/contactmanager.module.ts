@@ -9,6 +9,9 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {ContactmanagerRoutingModule} from './contactmanager-routing.module';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
+import {UserService} from './services/user.service';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -24,7 +27,12 @@ import {MatListModule} from '@angular/material/list';
     FlexLayoutModule,
     ContactmanagerRoutingModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    HttpClientModule
+  ],
+  providers: [
+    UserService
   ]
 })
 export class ContactmanagerModule { }
