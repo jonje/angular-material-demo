@@ -4,7 +4,7 @@ import {Component, OnInit} from '@angular/core';
   selector: 'app-buttons',
   template: `
     <div class="content mat-app-background">
-      <button mat-button color="primary">
+      <button mat-raised-button color="primary">
         <mat-icon>face</mat-icon>
         Click Me!
       </button>
